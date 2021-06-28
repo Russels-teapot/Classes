@@ -7,7 +7,7 @@ class Character {
 
   constructor(name, type) {
     this.name = name;
-    if (this.name.length < 2 || this.name.length > 10) {
+    if (name.length < 2 || name.length > 10) {
       throw new Error('Длина имени должна быть от 2 до 10 символов');
     }
     this.type = type;
@@ -78,5 +78,5 @@ class Daemon extends Character {
 }
 
 export {
-  types, Undead, Daemon, Magician, Zombie, Swordsman, Bowman, Character,
+  Undead, Daemon, Zombie, Bowman, Character,
 };
